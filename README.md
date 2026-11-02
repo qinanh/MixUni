@@ -71,9 +71,17 @@ model:
 
 ## Pretrained models
 
-`mixuni_checkpoints.tar` holds the weights of the runs in the paper; unpack it
-into `checkpoints/` ([checkpoints/MANIFEST.md](checkpoints/MANIFEST.md) lists
-every file). To evaluate one on its test split:
+The weights of the runs in the paper are attached to the
+[v1.0.0 release](https://github.com/qinanh/MixUni/releases/tag/v1.0.0)
+([checkpoints/MANIFEST.md](checkpoints/MANIFEST.md) lists every file):
+
+```bash
+wget https://github.com/qinanh/MixUni/releases/download/v1.0.0/mixuni_checkpoints.tar
+tar -xf mixuni_checkpoints.tar -C checkpoints --strip-components=1
+sha256sum -c checkpoints/SHA256SUMS
+```
+
+To evaluate one on its test split:
 
 ```bash
 python scripts/evaluate.py checkpoints/mixuni/best.pt

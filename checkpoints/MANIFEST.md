@@ -1,9 +1,10 @@
 # Checkpoints
 
 `mixuni_checkpoints.tar` (112 MB, 52 weight files, SHA-256 `9bc5202a60d875cf71624311a3b18d9244768e5d2c08a4545c017cfd7b1876e8`) holds the
-weights of the runs reported in the paper. Unpack it here and verify:
+weights of the runs reported in the paper. Download it from the v1.0.0 release, unpack it here and verify:
 
 ```bash
+wget https://github.com/qinanh/MixUni/releases/download/v1.0.0/mixuni_checkpoints.tar
 tar -xf mixuni_checkpoints.tar -C checkpoints --strip-components=1
 sha256sum -c checkpoints/SHA256SUMS
 ```

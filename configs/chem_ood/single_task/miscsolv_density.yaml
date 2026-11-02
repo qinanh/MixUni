@@ -1,0 +1,5 @@
+# Single-task GeoMix baseline, MiscSolv_density, chemical-OOD split.
+base: ../../single_task/_geomix.yaml
+properties: [MiscSolv_density]
+data:
+  split: data/splits/chem_ood/miscsolv_density.json

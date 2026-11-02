@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mixuni"
+version = "1.0.0"
+description = "MixUni: joint multi-property prediction for chemical mixtures with physics-informed heads."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Qinan Huang"}]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23",
+  "pyyaml>=6.0",
+  "torch>=2.0",
+  "torch-geometric>=2.4",
+]
+
+[project.optional-dependencies]
+data = ["pandas>=1.5"]
+dev = ["pandas>=1.5", "pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

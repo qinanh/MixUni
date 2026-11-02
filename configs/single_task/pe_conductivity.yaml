@@ -1,0 +1,3 @@
+# Single-task GeoMix baseline, PE_conductivity, random split.
+base: _geomix.yaml
+properties: [PE_conductivity]

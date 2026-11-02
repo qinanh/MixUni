@@ -1,0 +1,5 @@
+# Ablation: PCGrad on the per-property gradients (equal task weights).
+base: ../mixuni.yaml
+train:
+  loss_weighting: plain
+  pcgrad: true

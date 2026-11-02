@@ -1,0 +1,4 @@
+# Ablation: no auxiliary losses (coordinate denoising and MoE load balance).
+base: ../mixuni.yaml
+train:
+  aux_weight: 0.0

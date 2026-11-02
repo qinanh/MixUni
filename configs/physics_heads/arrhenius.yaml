@@ -1,0 +1,4 @@
+# Conductivity head: Arrhenius, log sigma = log A - B/T.
+base: ../mixuni.yaml
+model:
+  physics_head: arrhenius

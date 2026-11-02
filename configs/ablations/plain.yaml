@@ -1,0 +1,4 @@
+# Ablation: one MSE over all samples instead of uncertainty task weighting.
+base: ../mixuni.yaml
+train:
+  loss_weighting: plain

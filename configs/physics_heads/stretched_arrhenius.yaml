@@ -1,0 +1,3 @@
+# Conductivity head: stretched Arrhenius, log sigma = log A - B/T^gamma.
+# Same settings as configs/mixuni.yaml; a separate run for the head comparison.
+base: ../mixuni.yaml

@@ -1,0 +1,4 @@
+# Ablation: learned softmax task weights instead of uncertainty weighting.
+base: ../mixuni.yaml
+train:
+  loss_weighting: gradnorm

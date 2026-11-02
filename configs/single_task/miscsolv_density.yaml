@@ -1,0 +1,3 @@
+# Single-task GeoMix baseline, MiscSolv_density, random split.
+base: _geomix.yaml
+properties: [MiscSolv_density]

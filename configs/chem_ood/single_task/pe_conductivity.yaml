@@ -1,0 +1,5 @@
+# Single-task GeoMix baseline, PE_conductivity, chemical-OOD split.
+base: ../../single_task/_geomix.yaml
+properties: [PE_conductivity]
+data:
+  split: data/splits/chem_ood/pe_conductivity.json

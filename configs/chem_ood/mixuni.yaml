@@ -1,0 +1,8 @@
+# MixUni on the chemical-OOD split: mixtures are clustered by fingerprint
+# similarity and whole clusters are held out. This split uses the logV
+# viscosity set in place of NIST viscosity. The split is the union of the
+# per-property splits used by the single-task baselines in single_task/.
+base: ../mixuni.yaml
+properties: [IL_conductivity, IL_viscosity, PE_conductivity, logV_viscosity, MiscSolv_density]
+data:
+  split: data/splits/chem_ood/joint.json

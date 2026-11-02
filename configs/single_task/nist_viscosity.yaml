@@ -1,0 +1,3 @@
+# Single-task GeoMix baseline, NIST_viscosity, random split.
+base: _geomix.yaml
+properties: [NIST_viscosity]

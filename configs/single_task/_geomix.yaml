@@ -1,0 +1,18 @@
+# Shared settings of the single-task GeoMix baselines (not a run by itself):
+# the same EGNN encoder with GeoMix graph interaction layers, one MLP head,
+# no physics head, trained on a single property.
+base: ../mixuni.yaml
+data:
+  batch_size: 128
+  balanced_sampling: false
+model:
+  use_gil: true
+  gil_experts: 3
+  shared_head: per_property
+  physics_head: none
+train:
+  lr: 1.0e-4
+  scheduler: none
+  loss_weighting: plain
+  aux_weight: 0.01
+  amp: true

@@ -1,0 +1,3 @@
+# Single-task GeoMix baseline, IL_conductivity, random split.
+base: _geomix.yaml
+properties: [IL_conductivity]

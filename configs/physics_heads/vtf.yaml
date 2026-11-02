@@ -1,0 +1,4 @@
+# Conductivity head: Vogel-Tammann-Fulcher, log sigma = log A - B/(T - T0).
+base: ../mixuni.yaml
+model:
+  physics_head: vtf

@@ -1,0 +1,5 @@
+# Single-task GeoMix baseline, logV_viscosity, chemical-OOD split.
+base: ../../single_task/_geomix.yaml
+properties: [logV_viscosity]
+data:
+  split: data/splits/chem_ood/logv_viscosity.json

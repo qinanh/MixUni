@@ -1,0 +1,5 @@
+# Ablation: neither shared head nor physics head, one MLP per property.
+base: ../mixuni.yaml
+model:
+  shared_head: per_property
+  physics_head: none

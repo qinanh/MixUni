@@ -1,0 +1,11 @@
+# Ablation: one MLP per property instead of the shared mixture of experts.
+# The physics head is kept.
+base: ../mixuni.yaml
+data:
+  batch_size: 512
+model:
+  shared_head: per_property
+train:
+  epochs: 300
+  lr: 1.0e-3
+  aux_weight: 0.01

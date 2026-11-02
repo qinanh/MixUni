@@ -1,0 +1,4 @@
+# Ablation: no physics head; conductivity comes from the shared MoE alone.
+base: ../mixuni.yaml
+model:
+  physics_head: none

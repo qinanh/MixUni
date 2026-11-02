@@ -1,0 +1,4 @@
+# Conductivity head: unconstrained MLP (no temperature law).
+base: ../mixuni.yaml
+model:
+  physics_head: free_mlp

@@ -40,11 +40,13 @@ Only `datasets/<folder>/processed_data/{processed_*.csv,compounds.csv}` are read
 
 ## 2. Coordinate caches
 
-CheMixHub has no 3D structures. `mixuni_coord_caches.tar` (released with the
-checkpoints, sha256 `1daa2dfc3d6fbd34ccc0d7e54c7d4524d73bfbb608fdc0256def49861487b0f0`)
-holds one conformer per compound with a 6 Å radius graph:
+CheMixHub has no 3D structures. `mixuni_coord_caches.tar` (attached to the
+[v1.0.0 release](https://github.com/qinanh/MixUni/releases/tag/v1.0.0), sha256
+`1daa2dfc3d6fbd34ccc0d7e54c7d4524d73bfbb608fdc0256def49861487b0f0`) holds one
+conformer per compound with a 6 Å radius graph:
 
 ```bash
+wget https://github.com/qinanh/MixUni/releases/download/v1.0.0/mixuni_coord_caches.tar
 tar -xf mixuni_coord_caches.tar -C data/raw/chemixhub
 # -> data/raw/chemixhub/coord_data/coords-chemixhub-{ionic-liquids,polymer-electrolyte,nist-logV,miscible-solvent}.npz
 #    data/raw/chemixhub/coord_data_logv/coords-chemixhub-nist-logV.npz
